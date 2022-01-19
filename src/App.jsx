@@ -1,17 +1,36 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from 'react'
+
 import './App.css'
+
+import FamilyMember from './components/basic/FamilyMember'
+import Family from './components/basic/Family'
 import First from './components/basic/First'
 import Props from './components/basic/Props'
 import Fragment from './components/basic/Fragment'
 import NumberRandom from './components/basic/NumberRandom'
 import Card from './components/Layout/Card'
+import ListadeAlunos from './components/repeticao/ListadeAlunos'
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
 
 
 export default () => 
     <div className='App'>
         <h1>Fundamentos de React</h1>
         <div className='Cards'>
+            <Card title='#07 - Tabela Produtos' color='#ff8000'>
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
+            <Card title='#06 - Lista Alunos' color='#bf00ff'>
+                <ListadeAlunos></ListadeAlunos>
+            </Card>
+            <Card title='#05 - Family' color='#0000ff'>
+                <Family surname='Linhares'>
+                    <FamilyMember firstName = 'Jeová'/>
+                    <FamilyMember firstName = 'Izabel'/>
+                    <FamilyMember firstName = 'Ian'/>
+                </Family>
+            </Card>
             <Card title='#04 - Random Challenge' color='#080'>
                 <NumberRandom min = {10} max= {100}/>
             </Card>
