@@ -12,12 +12,28 @@ import NumberRandom from './components/basic/NumberRandom'
 import Card from './components/Layout/Card'
 import ListadeAlunos from './components/repeticao/ListadeAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import Indiretapai from './components/Communication/IndiretaPai'
+import Input from './components/form/Input'
+import Contador from './components/contador/Contador'
+import Mega from './components/desafioMega/Mega'
 
 
 export default () => 
     <div className='App'>
         <h1>Fundamentos de React</h1>
         <div className='Cards'>
+            <Card title='#11 - Mega' color='#0080ff'>
+                <Mega qtde={8}></Mega>
+            </Card>
+            <Card title='#10 - Contador' color='#0f0f0'>
+                <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card title='#09 - Controlados e nao controlados' color='#0000ff'>
+                <Input></Input>
+            </Card>
+            <Card title='#08 - Indiretas' color='#bf00ff'>
+                <Indiretapai></Indiretapai>
+            </Card>
             <Card title='#07 - Tabela Produtos' color='#ff8000'>
                 <TabelaProdutos></TabelaProdutos>
             </Card>
